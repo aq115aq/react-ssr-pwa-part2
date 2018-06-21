@@ -20,8 +20,8 @@ if (window.init_state) {
   store = createStoreWithMiddleware(reducer)
 }
 
-
-ReactDOM.render(
+// hydrate 用于将服务器渲染的HTML和React混合
+ReactDOM.hydrate(
   <Provider store={store}>
     <Router>
       {getRoutes()}

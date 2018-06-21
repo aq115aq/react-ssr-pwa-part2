@@ -59,5 +59,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(8088, () => {
-    console.log('监听：8088')
+  console.log('监听：8088')
 });
